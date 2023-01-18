@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "worldborder-edge-collector",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Worldborder Edge Collector",
+  "description": "Puts player at the edge of the worldborder when they pass it instead of damaging them.",
   "authors": [
-    "Me!"
+    "TheGrimsey"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/TheGrimsey/WorldBorderEdgeCollector",
+    "sources": "https://github.com/TheGrimsey/WorldBorderEdgeCollector"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.thegrimsey.worldborderedgecollector.WorldborderEdgeCollector"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "worldborder-edge-collector.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +31,5 @@
     "fabric": "*",
     "minecraft": "~1.18.2",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
